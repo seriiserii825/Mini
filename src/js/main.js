@@ -12,6 +12,9 @@
 /* https://github.com/john-terenzio/jQuery-Hover-Delay */
 //= ../../bower_components\jQuery-Hover-Delay\jquery.hoverdelay.min.js
 
+/*slick.js*/
+//= ../../bower_components\slick-carousel\slick\slick.min.js
+
 
 
 

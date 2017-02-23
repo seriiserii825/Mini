@@ -106,7 +106,7 @@ gulp.task('build', [
 gulp.task('browser-sync', ['html', 'css', 'js', 'fonts', 'image', 'sprite', 'fonts'], function () {
 
     browserSync.init({
-        proxy: "mini/build",
+        proxy: "Mini/build",
         notify: false
     });
 });
