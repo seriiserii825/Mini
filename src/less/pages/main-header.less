@@ -54,19 +54,28 @@
 /*main-header*/
 .main-header{
   position: fixed;
-  top: 30px;
+  top: 0;
   left: 0;
   right: 0;
+  padding: 20px 0;
   width: 100%;
+  z-index: 2000;
+  @media screen and (max-width: @md-width ) {
+    background: linear-gradient(top, rgba(30,87,153,1) 0%,rgba(125,185,232,1) 100%);
+  }
   /*container*/
   .container{
     position: relative;
   }
   /*main-menu*/
   .main-menu{
-    height: 150px;
+    height: 100px;
     text-align: right;
     z-index: 1005;
+    @media screen and (max-width: @md-width ) {
+      display: none;
+      height: 600px;
+    }
     /*main-menu__item*/
     &__item{
       position: relative;
@@ -79,9 +88,25 @@
       text-transform: uppercase;
       color: @text-white;
       transition: all 1s;
+      @media screen and (max-width: @lg-width ) {
+         padding: 0 25px;
+      }
+      @media screen and (min-width: @md-width ) {
+        display: inline-block !important;
+      }
+      @media screen and (max-width: @md-width ) {
+        display: block;
+        padding: 10px 0;
+        font-size: 22px;
+        line-height: 100px;
+        text-align: center;
+      }
       &:hover{
         text-decoration: none;
         color: @text-black;
+        @media screen and (max-width: @md-width ) {
+          background: lightskyblue;
+        }
       }
       &::after{
         content: '//';
@@ -90,6 +115,9 @@
         right: 0;
         font-size: 18px;
         color: @text-white;
+        @media screen and (max-width: @md-width ) {
+          content: '';
+        }
       }
       &:last-of-type{
         padding-right: 0;
@@ -99,6 +127,7 @@
       }
     }
   }
+  /*logo*/
   .logo{
     position: absolute;
     left: 0;
@@ -113,5 +142,34 @@
     color: #fff;
     border: 2px solid #fff;
     border-radius: 50%;
+    @media screen and (max-width: @md-width ) {
+      width: 100px;
+      height: 100px;
+      font-size: 24px;
+      line-height: 100px;
+    }
+  }
+  /*main-menu__bar*/
+  .main-menu__bar{
+    position: relative;
+    font-size: 48px;
+    text-align: center;
+    line-height: 100px;
+    color: @text-white;
+    @media screen and (min-width: @md-width ) {
+      display: none;
+    }
+    .show-main-menu{
+      position: absolute;
+      top: 50%;
+      right: 50px;
+      transform: translate(0, -50%);
+      font-family: FontAwesome;
+      font-size: 50px;
+      color: #fff;
+      .fa{
+        cursor: pointer;
+      }
+    }
   }
 }

@@ -1,4 +1,12 @@
 $(function () {
+		/*show main-menu*/
+		$('#js-show-main-menu').on('click', function(){
+				var mainMenu = $('#js-main-menu');
+				mainMenu.slideToggle();
+
+		});
+
+
 		/*main-slider*/
 		$('#js-main-slider').slick({
 				dots: true,
@@ -10,7 +18,6 @@ $(function () {
 
 		/*rangeslider*/
 		var rangeS = $('.js-range');
-		console.log('rangeS = ' + rangeS);
 
 		rangeS.rangeslider({
 				polyfill: false,
@@ -22,12 +29,10 @@ $(function () {
 						});
 				},
 				onSlide: function (position, value) {
-						rangeS.each(function () {
-								var $this = $(this);
-								var rangeV = $this.attr('data-range');
-								console.log(rangeV);
-								$(rangeV).text(value + '%');
-						});
+						var element = $(this)[0].$element;
+						var rangeV = element.attr('data-range');
+						console.log($(element));
+						$(rangeV).text(value + '%');
 				}
 		});
 });
