@@ -3,6 +3,24 @@ $(function () {
 		$('#js-show-main-menu').on('click', function(){
 				var mainMenu = $('#js-main-menu');
 				mainMenu.slideToggle();
+		});
+
+		$(document).on('scroll', function () {
+				var mainHeaderHeight = $('#js-main-header-wrapper').innerHeight() - 300,
+						documentHeight = $(document).scrollTop(),
+						mainHeader = $('#js-main-header'),
+						logo = $('#js-logo');
+
+
+				if(documentHeight > mainHeaderHeight){
+						mainHeader.css({
+								backgroundColor: 'rgba(0, 92, 138, 0.76)'
+						});
+				}else{
+						mainHeader.css({
+								backgroundColor: 'transparent'
+						});
+				}
 
 		});
 
