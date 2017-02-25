@@ -54,6 +54,9 @@ a.button-yellow {
   background: @bg-yellow;
 }
 
+/*title*/
+
+
 /*section*/
 .section {
   padding: 100px 0;
@@ -65,6 +68,13 @@ a.button-yellow {
     font-weight: bold;
     text-transform: uppercase;
     color: @text-black;
+    &-middle{
+      margin-bottom: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: @text-black;
+    }
   }
   /*section__content*/
   &__content{
@@ -124,6 +134,7 @@ a.button-yellow {
 
 /*icons*/
 .big-icon{
+  position: relative;
   .inline-block;
   width: 124px;
   height: 124px;

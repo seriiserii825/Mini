@@ -5,6 +5,9 @@
   }
   .our-stories{
     /*our-stories__content*/
+    padding-bottom: 120px;
+    border-bottom: 2px solid #e6e6e6;
+
     &__content{
       .inline-block;
       max-width: 495px;
@@ -17,5 +20,33 @@
     line-height: 28px;
     font-weight: 300;
     color: @text-red;
+  }
+  .our-skills{
+    padding-top: 125px;
+    &__content{
+      .inline-block;
+      max-width: 400px;
+      p{
+        margin-bottom: 60px;
+      }
+    }
+    .rangeslider,
+    .rangeslider__fill{
+      box-shadow: none;
+      border-radius: 0;
+    }
+    .rangeslider{
+      background: @bg-gray;
+    }
+    .rangeslider__fill{
+      background: @bg-yellow;
+    }
+    .rangeslider__handle{
+      display: none;
+    }
+    span{
+      font-weight: 600;
+      text-transform: uppercase;
+    }
   }
 }

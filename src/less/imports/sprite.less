@@ -1,0 +1,209 @@
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+@1-bulb-name: '1-bulb';
+@1-bulb-x: 0px;
+@1-bulb-y: 0px;
+@1-bulb-offset-x: 0px;
+@1-bulb-offset-y: 0px;
+@1-bulb-width: 28px;
+@1-bulb-height: 40px;
+@1-bulb-total-width: 193px;
+@1-bulb-total-height: 120px;
+@1-bulb-image: '../img/sprite.png';
+@1-bulb: 0px 0px 0px 0px 28px 40px 193px 120px '../img/sprite.png' '1-bulb';
+@10-banknote-name: '10-banknote';
+@10-banknote-x: 0px;
+@10-banknote-y: 50px;
+@10-banknote-offset-x: 0px;
+@10-banknote-offset-y: -50px;
+@10-banknote-width: 32px;
+@10-banknote-height: 32px;
+@10-banknote-total-width: 193px;
+@10-banknote-total-height: 120px;
+@10-banknote-image: '../img/sprite.png';
+@10-banknote: 0px 50px 0px -50px 32px 32px 193px 120px '../img/sprite.png' '10-banknote';
+@11-map-icon-name: '11-map-icon';
+@11-map-icon-x: 164px;
+@11-map-icon-y: 76px;
+@11-map-icon-offset-x: -164px;
+@11-map-icon-offset-y: -76px;
+@11-map-icon-width: 23px;
+@11-map-icon-height: 20px;
+@11-map-icon-total-width: 193px;
+@11-map-icon-total-height: 120px;
+@11-map-icon-image: '../img/sprite.png';
+@11-map-icon: 164px 76px -164px -76px 23px 20px 193px 120px '../img/sprite.png' '11-map-icon';
+@2-parameters-name: '2-parameters';
+@2-parameters-x: 80px;
+@2-parameters-y: 0px;
+@2-parameters-offset-x: -80px;
+@2-parameters-offset-y: 0px;
+@2-parameters-width: 32px;
+@2-parameters-height: 32px;
+@2-parameters-total-width: 193px;
+@2-parameters-total-height: 120px;
+@2-parameters-image: '../img/sprite.png';
+@2-parameters: 80px 0px -80px 0px 32px 32px 193px 120px '../img/sprite.png' '2-parameters';
+@3-cup-name: '3-cup';
+@3-cup-x: 122px;
+@3-cup-y: 42px;
+@3-cup-offset-x: -122px;
+@3-cup-offset-y: -42px;
+@3-cup-width: 28px;
+@3-cup-height: 32px;
+@3-cup-total-width: 193px;
+@3-cup-total-height: 120px;
+@3-cup-image: '../img/sprite.png';
+@3-cup: 122px 42px -122px -42px 28px 32px 193px 120px '../img/sprite.png' '3-cup';
+@4-stack-name: '4-stack';
+@4-stack-x: 0px;
+@4-stack-y: 92px;
+@4-stack-offset-x: 0px;
+@4-stack-offset-y: -92px;
+@4-stack-width: 32px;
+@4-stack-height: 28px;
+@4-stack-total-width: 193px;
+@4-stack-total-height: 120px;
+@4-stack-image: '../img/sprite.png';
+@4-stack: 0px 92px 0px -92px 32px 28px 193px 120px '../img/sprite.png' '4-stack';
+@5-user-name: '5-user';
+@5-user-x: 42px;
+@5-user-y: 50px;
+@5-user-offset-x: -42px;
+@5-user-offset-y: -50px;
+@5-user-width: 32px;
+@5-user-height: 32px;
+@5-user-total-width: 193px;
+@5-user-total-height: 120px;
+@5-user-image: '../img/sprite.png';
+@5-user: 42px 50px -42px -50px 32px 32px 193px 120px '../img/sprite.png' '5-user';
+@6-like-name: '6-like';
+@6-like-x: 122px;
+@6-like-y: 0px;
+@6-like-offset-x: -122px;
+@6-like-offset-y: 0px;
+@6-like-width: 32px;
+@6-like-height: 32px;
+@6-like-total-width: 193px;
+@6-like-total-height: 120px;
+@6-like-image: '../img/sprite.png';
+@6-like: 122px 0px -122px 0px 32px 32px 193px 120px '../img/sprite.png' '6-like';
+@7-star-name: '7-star';
+@7-star-x: 164px;
+@7-star-y: 39px;
+@7-star-offset-x: -164px;
+@7-star-offset-y: -39px;
+@7-star-width: 28px;
+@7-star-height: 27px;
+@7-star-total-width: 193px;
+@7-star-total-height: 120px;
+@7-star-image: '../img/sprite.png';
+@7-star: 164px 39px -164px -39px 28px 27px 193px 120px '../img/sprite.png' '7-star';
+@8-lab-name: '8-lab';
+@8-lab-x: 38px;
+@8-lab-y: 0px;
+@8-lab-offset-x: -38px;
+@8-lab-offset-y: 0px;
+@8-lab-width: 32px;
+@8-lab-height: 32px;
+@8-lab-total-width: 193px;
+@8-lab-total-height: 120px;
+@8-lab-image: '../img/sprite.png';
+@8-lab: 38px 0px -38px 0px 32px 32px 193px 120px '../img/sprite.png' '8-lab';
+@9-world-name: '9-world';
+@9-world-x: 164px;
+@9-world-y: 0px;
+@9-world-offset-x: -164px;
+@9-world-offset-y: 0px;
+@9-world-width: 29px;
+@9-world-height: 29px;
+@9-world-total-width: 193px;
+@9-world-total-height: 120px;
+@9-world-image: '../img/sprite.png';
+@9-world: 164px 0px -164px 0px 29px 29px 193px 120px '../img/sprite.png' '9-world';
+@spritesheet-width: 193px;
+@spritesheet-height: 120px;
+@spritesheet-image: '../img/sprite.png';
+@spritesheet-sprites: @1-bulb @10-banknote @11-map-icon @2-parameters @3-cup @4-stack @5-user @6-like @7-star @8-lab @9-world;
+@spritesheet: 193px 120px '../img/sprite.png' @spritesheet-sprites;
+
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.sprite-width(@sprite) {
+  width: extract(@sprite, 5);
+}
+
+.sprite-height(@sprite) {
+  height: extract(@sprite, 6);
+}
+
+.sprite-position(@sprite) {
+  @sprite-offset-x: extract(@sprite, 3);
+  @sprite-offset-y: extract(@sprite, 4);
+  background-position: @sprite-offset-x @sprite-offset-y;
+}
+
+.sprite-image(@sprite) {
+  @sprite-image: extract(@sprite, 9);
+  @sprite-image-bare: ~`"@{sprite-image}".slice(1, -1)`;
+  background-image: url(@sprite-image-bare);
+}
+
+.sprite(@sprite) {
+  .sprite-image(@sprite);
+  .sprite-position(@sprite);
+  .sprite-width(@sprite);
+  .sprite-height(@sprite);
+}
+
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
+.sprites(@sprites, @i: 1) when (@i <= length(@sprites)) {
+  @sprite: extract(@sprites, @i);
+  @sprite-name: e(extract(@sprite, 10));
+  .@{sprite-name} {
+    .sprite(@sprite);
+  }
+  .sprites(@sprites, @i + 1);
+}

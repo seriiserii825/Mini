@@ -15,6 +15,11 @@
 /*slick.js*/
 //= ../../bower_components\slick-carousel\slick\slick.min.js
 
+/*rangeslider*/
+/*https://github.com/andreruffert/rangeslider.js*/
+//= ../../bower_components\rangeslider.js\dist\rangeslider.min.js
+
+
 
 
 
