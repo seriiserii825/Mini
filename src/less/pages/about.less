@@ -8,10 +8,27 @@
     /*our-stories__content*/
     padding-bottom: 120px;
     border-bottom: 2px solid #e6e6e6;
+    @media screen and (max-width: 678px ) {
+      margin: 0 auto;
+       width: 500px;
+    }
 
     &__content{
       .inline-block;
       max-width: 495px;
+      @media screen and (max-width: @md-width ) {
+        margin-bottom: 50px;
+      }
+    }
+    .big-icon{
+      @media screen and (max-width: @lg-width ) {
+        margin-bottom: 50px;
+      }
+      @media screen and (max-width: 678px ) {
+        display: block;
+        margin: 0 auto;
+        width: 124px;
+      }
     }
   }
   /*text-red*/
@@ -24,8 +41,22 @@
   }
   .our-skills{
     padding-top: 125px;
+    &__image{
+      margin: 0 auto;
+      max-width: 485px;
+      @media screen and (max-width: @md-width ) {
+        margin-bottom: 50px;
+      }
+    }
+    .big-icon{
+      margin: 0 auto;
+      margin-bottom: 30px;
+      display: block;
+      width: 124px;
+    }
     &__content{
-      .inline-block;
+      display: block;
+      margin: 0 auto;
       max-width: 400px;
       p{
         margin-bottom: 60px;

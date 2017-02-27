@@ -1,0 +1,51 @@
+.features{
+  height: 700px;
+  @media screen and (max-width: @md-width ) {
+      height: 1100px;
+  }
+  .container{
+    position: relative;
+    height: 100%;
+  }
+  .row{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 100%;
+    @media screen and (max-width: @md-width ) {
+        top: 60%;
+    }
+    @media screen and (max-width: @sm-width ) {
+        top: 54%;
+    }
+  }
+  .big-icon{
+    display: block;
+    margin: 0 auto;
+    width: 124px;
+    height: 124px;
+    text-align: center;
+    transition: all .6s;
+    @media screen and (max-width: @md-width ) {
+      margin-bottom: 90px;
+    }
+    &:hover{
+      border-color: @border-white;
+      cursor: pointer;
+    }
+    &:hover .fa{
+      color: @text-yellow;
+    }
+    .fa{
+      font-size: 28px;
+      line-height: 124px;
+      color: @text-white;
+      transition: all .6s;
+    }
+  }
+}
+.no-bg{
+  @media screen and (max-width: @md-width ) {
+      height: 1100px;
+  }
+}

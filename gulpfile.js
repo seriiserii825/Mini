@@ -39,7 +39,6 @@ gulp.task('css', function () {
         .pipe(cssnano({
             zindex: false
         }))
-        //.pipe(rename('style.min.css'))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('build/css/'))
         .pipe(browserSync.stream());
@@ -103,7 +102,7 @@ gulp.task('build', [
     'image'
 ]);
 
-gulp.task('browser-sync', ['html', 'css', 'js', 'fonts', 'image', 'sprite', 'fonts'], function () {
+gulp.task('browser-sync', ['html', 'css', 'js'], function () {
 
     browserSync.init({
         proxy: "mini/build",
