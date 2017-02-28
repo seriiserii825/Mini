@@ -1,0 +1,131 @@
+.service{
+  /*service__top*/
+  &__top{
+    padding-bottom: 120px;
+    border-bottom: 1px solid lightgrey;
+  }
+  /*service__item*/
+  &__item{
+    text-align: center;
+    .service__text{
+      @media screen and (max-width: @md-width ) {
+        margin-bottom: 50px;
+      }
+    }
+  }
+  /*service__title*/
+  &__title{
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: bold;
+    color: @text-black;
+    text-transform: uppercase;
+  }
+  /*service__bottom*/
+  &__bottom{
+    padding-top: 120px;
+    .service__text{
+      max-width: 300px;
+    }
+  }
+  &__packege{
+    .service__text{
+      .inline-block;
+    }
+    @media screen and (max-width: @md-width ) {
+      text-align: center;
+    }
+  }
+  /*service__money*/
+  &__money{
+    &-item{
+      text-align: center;
+      /*service__money .titles*/
+      .titles{
+        padding: 30px 0;
+        transition: all 1s;
+        &:hover{
+          background: @bg-yellow;
+        }
+        &:hover .service__money-item-title:after{
+          background: @bg-white;
+        }
+      }
+      /*service__money-title*/
+      &-title{
+        position: relative;
+        padding-bottom: 10px;
+        font-size: 22px;
+        font-weight: bold;
+        line-height: 45px;
+        text-transform: uppercase;
+        color: @text-black;
+        transition: all 1s;
+        &:hover .service__money-item-title,
+        &:hover .service__money-item-subtitle{
+          color: @text-white;
+        }
+      }
+      /*service__money-title::after*/
+      &-title::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 20%;
+        height: 4px;
+        background: @bg-yellow;
+        transition: all 1s;
+      }
+      /*service__money-subtitle*/
+      &-subtitle{
+        padding-top: 10px;
+        font-size: 22px;
+        font-weight: bold;
+        line-height: 45px;
+        text-transform: uppercase;
+        color: @text-black;
+      }
+      /*button-wrap*/
+      .button-wrap{
+        height: 118px;
+        text-align: center;
+        .button{
+          position: relative;
+          top: 50px;
+          text-transform: uppercase;
+          color: @text-black;
+          transition: all .8s;
+          &:hover{
+            text-decoration: none;
+            color: @text-white;
+            background: @bg-yellow;
+          }
+        }
+      }
+    }
+    /*service__money-content*/
+    &-content:hover .service__money-list-item:nth-of-type(odd),
+    &-content:hover .button-wrap{
+      background: @bg-gray;
+    }
+    /*service__money-list-item*/
+    &-list-item,
+    .button-wrap{
+      transition: all 1s;
+    }
+  }
+  /*big-icon*/
+  .big-icon{
+    margin-bottom: 25px;
+    &:hover{
+      border-color: @border-gray;
+    }
+  }
+  /*fa*/
+  .fa{
+    color: @text-black;
+  }
+}

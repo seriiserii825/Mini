@@ -56,9 +56,6 @@ a.button-yellow {
   background: @bg-yellow;
 }
 
-/*title*/
-
-
 /*section*/
 .section {
   padding: 100px 0;
@@ -143,8 +140,24 @@ a.button-yellow {
   .inline-block;
   width: 124px;
   height: 124px;
+  text-align: center;
   border: 2px solid @border-yellow;
   border-radius: 50%;
+  transition: all .6s;
+  &:hover{
+    border-color: @border-white;
+    cursor: pointer;
+  }
+  .fa{
+    font-size: 28px;
+    line-height: 124px;
+    color: @text-white;
+    transition: all .6s;
+  }
+  &:hover .fa{
+    color: @text-yellow;
+  }
+
 }
 
 /*video*/
