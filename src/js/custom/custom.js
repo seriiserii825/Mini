@@ -63,4 +63,13 @@ $(function () {
 				autoplaySpeed: 20000,
 				arrows: false
 		});
+
+		/*js-portfolio-slider*/
+		$('#js-portfolio-slider').slick({
+				dots: true,
+				speed: 1000,
+				autoplay: true,
+				autoplaySpeed: 20000,
+				arrows: true
+		});
 });

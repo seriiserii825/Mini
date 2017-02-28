@@ -1,0 +1,129 @@
+.portfolio-slider{
+  position: relative;
+  padding-right: 50px;
+  background: @bg-yellow;
+  /*slick-dots*/
+  .slick-dots{
+    position: absolute;
+    right: 10px;
+    top: 60%;
+    bottom: 0;
+    width: 30px;
+    transform: translate(0, -50%);
+    li{
+      display: block;
+      margin: 10px;
+    }
+  }
+  /*slick-next slick-prev*/
+  .slick-next,
+  .slick-prev{
+    top: auto;
+    transform: translate(0, 0);
+    bottom: -50px;
+    padding: 10px;
+    border: 1px solid lightgray;
+    &::before{
+      content: '';
+      position: relative;
+      left: -5px;
+      font-family: FontAwesome;
+      font-size: 16px;
+      line-height: 4px;
+      text-align: center;
+      color: @text-black;
+    }
+  }
+  /*slick-prev*/
+  .slick-prev{
+    left: 45%;
+    &::before{
+      content: '\f053';
+    }
+  }
+  /*slick-next*/
+  .slick-next{
+    right: 45%;
+    &::before{
+      content: '\f054';
+    }
+  }
+}
+/*portfolio-slider__caption*/
+.portfolio-slider__caption{
+  margin-top: 80px;
+  padding-bottom: 120px;
+  border-bottom: 1px solid lightgray;
+  /*portfolio-title*/
+  .portfolio-title{
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: @text-black;
+  }
+  /*portfolio-subtitle*/
+  .portfolio-subtitle{
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+    color: @text-color;
+  }
+}
+/*portfolio__list*/
+.portfolio{
+  &__list{
+    padding-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+    &-item{
+      position: relative;
+      .inline-block;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: @text-black;
+      padding: 0 20px;
+      &.active{
+        color: @text-yellow;
+      }
+    }
+  }
+  .gallery-row{
+    font-size: 0;
+    .gallery__item{
+      .inline-block;
+    }
+  }
+  .gallery__item-wrap{
+    .inline-block;
+    @media screen and (max-width: @lg-width ) {
+      display: block;
+      margin: 0 auto;
+      width: 572px;
+    }
+    .gallery__item{
+      @media screen and (max-width: @sm-width ) {
+        display: block;
+        margin: 0 auto;
+        width: 286px;
+      }
+    }
+  }
+  .gallery__titles{
+    padding: 10px 0;
+  }
+  .gallery__title{
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .gallery__subtitle{
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: @text-gray;
+  }
+}
+

@@ -93,10 +93,12 @@ gulp.task('build', [
 		'image'
 ]);
 
-gulp.task('browser-sync', ['html', 'css', 'js', 'fonts', 'image', 'sprite','fonts'], function() {
+gulp.task('browser-sync', ['html', 'css', 'js', 'fonts', 'image', 'sprite'], function() {
 
 		browserSync.init({
-				proxy: "mini/build",
+				server: {
+						baseDir: "build"
+				},
 				notify: false
 		});
 });
