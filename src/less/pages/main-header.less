@@ -102,9 +102,16 @@
         line-height: 100px;
         text-align: center;
       }
+      &:focus{
+        text-decoration: none;
+      }
+      &.active{
+        color: @text-yellow;
+        text-decoration: none;
+      }
       &:hover{
         text-decoration: none;
-        color: @text-black;
+        color: @text-yellow;
         @media screen and (max-width: @md-width ) {
           background: lightskyblue;
         }
@@ -143,6 +150,12 @@
     color: #fff;
     border: 2px solid #fff;
     border-radius: 50%;
+    cursor: pointer;
+    transition: all .6s;
+    &:hover{
+      color: @text-yellow;
+      border-color: @border-yellow;
+    }
     @media screen and (max-width: @md-width ) {
       width: 100px;
       height: 100px;

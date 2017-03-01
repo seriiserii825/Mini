@@ -19,6 +19,9 @@
 /*https://github.com/andreruffert/rangeslider.js*/
 //= ../../bower_components\rangeslider.js\dist\rangeslider.min.js
 
+/*change active nav*/
+//= ../less\libs\jquery.changeActiveNav.min.js
+
 
 
 

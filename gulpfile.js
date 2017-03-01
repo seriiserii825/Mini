@@ -33,8 +33,7 @@ gulp.task('css', function() {
 				.pipe(cssnano({
 						zindex: false
 				}))
-				//.pipe(rename('style.min.css'))
-				.pipe(sourcemaps.write())
+				.pipe(sourcemaps.write('.'))
 				.pipe(gulp.dest('build/css/'))
 				.pipe(browserSync.stream());
 });
@@ -43,7 +42,7 @@ gulp.task('html', function() {
 		gulp.src('src/**/*.html') // Выберем файлы по нужному пути
 				.pipe(sourcemaps.init())
 				.pipe(rigger()) // Прогоним через rigger
-				.pipe(sourcemaps.write())
+				.pipe(sourcemaps.write('.'))
 				.pipe(gulp.dest('build/'))
 				.pipe(browserSync.stream());
 		// Переместим их в папку build
@@ -61,7 +60,7 @@ gulp.task('js', function() {
 				.pipe(rigger())
 				.pipe(sourcemaps.init())
 				.pipe(uglify())
-				.pipe(sourcemaps.write())
+				.pipe(sourcemaps.write('.'))
 				.pipe(gulp.dest('build/js'))
 				.pipe(browserSync.stream());
 });
@@ -93,12 +92,10 @@ gulp.task('build', [
 		'image'
 ]);
 
-gulp.task('browser-sync', ['html', 'css', 'js', 'fonts', 'image', 'sprite'], function() {
+gulp.task('browser-sync', ['html', 'css', 'js', 'fonts', 'image', 'sprite','fonts'], function() {
 
 		browserSync.init({
-				server: {
-						baseDir: "build"
-				},
+				proxy: "mini/build",
 				notify: false
 		});
 });

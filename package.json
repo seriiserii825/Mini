@@ -1,11 +1,12 @@
 {
   "name": "mini",
   "version": "1.0.0",
+  "description": "website",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "serii",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.18.2",
@@ -19,11 +20,6 @@
     "gulp-sourcemaps": "^1.9.1",
     "gulp-uglify": "^2.0.0",
     "gulp.spritesmith": "^6.2.1",
-    "main-bower-files": "^2.13.1",
     "rimraf": "^2.5.4"
-  },
-  "dependencies": {
-    "uuid": "^3.0.1"
-  },
-  "description": ""
+  }
 }
