@@ -1,0 +1,23 @@
+.blog{
+  &__item{
+    &-description{
+      padding: 20px 0;
+      text-align: center;
+    }
+    &-title{
+      font-weight: bold;
+      text-transform: uppercase;
+      color: @text-black;
+    }
+    a.button{
+      font-weight: bold;
+      text-transform: uppercase;
+      color: @text-black;
+      transition: all .6s;
+      &:hover{
+        color: @text-white;
+        background: @bg-yellow;
+      }
+    }
+  }
+}

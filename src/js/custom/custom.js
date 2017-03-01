@@ -72,4 +72,18 @@ $(function () {
 				autoplaySpeed: 20000,
 				arrows: true
 		});
+
+		/*yellow icon on input focus*/
+		$('.form-group').focusin(function () {
+				$(this).children('.fa').css({
+						color: '#f39c12'
+				});
+		});
+		$('.form-group').focusout(function () {
+				$('.form-group .fa').css({
+						color: '#737373'
+				});
+
+		});
+
 });

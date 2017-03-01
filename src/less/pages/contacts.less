@@ -1,0 +1,87 @@
+.contacts{
+  &__title{
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: @text-black;
+  }
+  .form-group{
+    position: relative;
+    .fa{
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: inherit;
+    }
+  }
+  &__form{
+    input[type="text"],
+    input[type="email"]{
+      padding-left: 25px;
+      padding-right: 45px;
+      margin-bottom: 10px;
+      width: 100%;
+      height: 40px;
+      color: @text-gray;
+      border: 2px solid lightgrey;
+      box-sizing: border-box;
+    }
+    input,
+    textarea{
+      &:focus{
+        outline: none;
+        border:2px solid @border-yellow;
+      }
+    }
+    textarea{
+      padding: 25px;
+      padding-top: 10px;
+      margin-bottom: 24px;
+      width: 100%;
+      height: 120px;
+      color: @text-gray;
+    }
+  }
+  .button{
+    width: 130px;
+    height: 40px;
+    line-height: 40;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: @text-black;
+    background: none;
+    border: 2px solid @border-yellow;
+    transition: all 1s;
+    &:hover{
+      color: @text-white;
+      background: @bg-yellow;
+    }
+  }
+  &__list{
+    &-item{
+      margin-bottom: 10px;
+      font-weight: 600;
+      color: @text-black;
+      .small-icon{
+        margin-right: 20px;
+      }
+      .fa{
+        display: block;
+        font-size: 18px;
+        line-height: 30px;
+        color: @text-black;
+        cursor: pointer;
+        transition: all .8s;
+        &:hover{
+          color: @text-white;
+          background: @bg-yellow;
+        }
+      }
+    }
+  }
+}

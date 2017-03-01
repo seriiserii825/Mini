@@ -21,6 +21,7 @@ body {
   clear: both;
 }
 
+
 ul {
   margin: 0;
   padding: 0;
@@ -55,16 +56,20 @@ a.button {
 a.button-yellow {
   background: @bg-yellow;
 }
-
+a.yellow{
+  color: @text-yellow;
+}
 /*section*/
 .section {
   padding: 100px 0;
   background: @bg-white;
+  &__header{
+    margin-bottom: 150px;
+  }
   /*section__title*/
   &__title {
-    margin-bottom: 150px;
     font-size: 30px;
-    line-height: 45px;
+    line-height: 88px;
     font-weight: bold;
     text-transform: uppercase;
     color: @text-black;
@@ -158,6 +163,17 @@ a.button-yellow {
     color: @text-yellow;
   }
 
+}
+.small-icon{
+  position: relative;
+  .inline-block;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px solid @border-yellow;
+  overflow: hidden;
 }
 
 /*video*/
