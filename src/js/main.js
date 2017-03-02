@@ -1,6 +1,3 @@
-/*jquery*/
-//= ../../bower_components/jquery/dist/jquery.min.js
-
 /*jquery-migrate*/
 //= ../../bower_components/jquery-migrate/jquery-migrate.min.js
 

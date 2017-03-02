@@ -9,7 +9,11 @@ var gulp = require('gulp'),
 		uglify = require('gulp-uglify'),
 		spritesmith = require('gulp.spritesmith'),
 		sourcemaps = require('gulp-sourcemaps'),
-		browserSync = require('browser-sync').create();
+		browserSync = require('browser-sync').create(),
+		googlecdn = require('gulp-google-cdn');
+
+
+
 
 
 gulp.task('sprite', function() {
@@ -33,7 +37,7 @@ gulp.task('css', function() {
 				.pipe(cssnano({
 						zindex: false
 				}))
-				.pipe(sourcemaps.write('.'))
+				.pipe(sourcemaps.write())
 				.pipe(gulp.dest('build/css/'))
 				.pipe(browserSync.stream());
 });
@@ -42,7 +46,7 @@ gulp.task('html', function() {
 		gulp.src('src/**/*.html') // Выберем файлы по нужному пути
 				.pipe(sourcemaps.init())
 				.pipe(rigger()) // Прогоним через rigger
-				.pipe(sourcemaps.write('.'))
+				.pipe(sourcemaps.write())
 				.pipe(gulp.dest('build/'))
 				.pipe(browserSync.stream());
 		// Переместим их в папку build
@@ -60,7 +64,7 @@ gulp.task('js', function() {
 				.pipe(rigger())
 				.pipe(sourcemaps.init())
 				.pipe(uglify())
-				.pipe(sourcemaps.write('.'))
+				.pipe(sourcemaps.write())
 				.pipe(gulp.dest('build/js'))
 				.pipe(browserSync.stream());
 });
