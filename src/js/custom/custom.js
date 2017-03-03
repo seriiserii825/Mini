@@ -58,9 +58,7 @@ $(function () {
 				$('.js-main-menu__item').removeClass('active');
 				$(this).addClass('active');
 				var current = $(this).attr('href');
-				console.log(current);
 				var currentOffset = $(current).offset().top;
-				console.log(currentOffset);
 				$('html, body').animate({
 						scrollTop: currentOffset
 				}, 2000);
@@ -93,7 +91,6 @@ $(function () {
 				onSlide: function (position, value) {
 						var element = $(this)[0].$element;
 						var rangeV = element.attr('data-range');
-						console.log($(element));
 						$(rangeV).text(value + '%');
 				}
 		});

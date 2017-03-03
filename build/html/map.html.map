@@ -1,1 +1,0 @@
-{"version":3,"names":[],"mappings":"","sources":["html/map.html"],"sourcesContent":["<div class=\"map\" id=\"js-map\">\r\n  <div class=\"triangle-up\"></div>\r\n\r\n  <div class=\"triangle-down\"></div>\r\n</div>"],"file":"map.html"}
